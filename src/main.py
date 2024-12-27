@@ -57,7 +57,7 @@ def save_to_postgres(data):
         
         # Parse and insert data
         for item in data:
-            propertyID = item.get("propertyID")
+            propertyID = item.get("propertyId")
             address_components = item.get("addressComponents", {})
             flatNumber = address_components.get("flatNumber", "Unknown")
             streetNumber = address_components.get("streetNumber", "Unknown")
@@ -87,6 +87,8 @@ def save_to_postgres(data):
             marketStatus = activitySummary.get("marketStatus")
         
             # Insert into database
+            print(f"Raw item propertyID: {item.get('propertyID')}")
+            print(f"Extracted propertyID: {propertyID}")
             cursor.execute("""
             INSERT INTO properties (
                 "propertyID", "flatNumber", "streetNumber", "streetName", "streetType", 
@@ -110,7 +112,7 @@ def save_to_postgres(data):
         ))
             # Commit after each insert
             conn.commit()
-            print("Data saved successfully.")
+            print(f"Saved property with ID: {propertyID}")
     except Exception as e:
         print(f"Error saving data to PostgreSQL: {e}")
     finally:
