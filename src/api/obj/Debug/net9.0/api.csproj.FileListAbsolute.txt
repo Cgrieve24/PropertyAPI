@@ -37,3 +37,11 @@
 /Users/callumgrieve/my-new-repo/src/api/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/callumgrieve/my-new-repo/src/api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/callumgrieve/my-new-repo/src/api/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/callumgrieve/my-new-repo/src/api/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/callumgrieve/my-new-repo/src/api/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/callumgrieve/my-new-repo/src/api/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/callumgrieve/my-new-repo/src/api/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/callumgrieve/my-new-repo/src/api/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/callumgrieve/my-new-repo/src/api/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/callumgrieve/my-new-repo/src/api/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/callumgrieve/my-new-repo/src/api/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll

@@ -23,7 +23,9 @@ namespace api.Services
 
         public async Task<Property?> GetPropertyByIdAsync(string propertyId)
         {
-            using var connection = new NpgsqlConnection(_configuration.GetConnectionString("DefaultConnection"));
+            // Retrieve the connection string from configuration
+            var connectionString = _configuration.GetConnectionString("DefaultConnection");
+            using var connection = new NpgsqlConnection(connectionString);
             await connection.OpenAsync();
 
             var sql = @"
